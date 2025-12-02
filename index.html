@@ -252,6 +252,12 @@ section {
     transform: translateY(-5px);
 }
 
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image-container {
     position: relative;
     width: 400px;
@@ -260,12 +266,17 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     border: 10px solid var(--white);
+    background: linear-gradient(135deg, #4A90E2 0%, #2ECC71 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .scroll-down {
@@ -309,10 +320,15 @@ section {
     position: relative;
 }
 
-.about-image img {
+.about-image > img {
     width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 5/6;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    object-fit: cover;
+    object-position: center;
 }
 
 .about-stats {
@@ -588,7 +604,7 @@ section {
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="https://via.placeholder.com/400x400/4A90E2/ffffff?text=SK" alt="Sumit Kumar Mallick">
+                        <img src="https://via.placeholder.com/400x400/4A90E2/ffffff?text=SUMIT+KUMAR" alt="Sumit Kumar Mallick">
                     </div>
                 </div>
             </div>
@@ -607,7 +623,7 @@ section {
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/500x600/4A90E2/ffffff?text=Professional" alt="About Sumit">
+                    <img src="https://via.placeholder.com/500x600/4A90E2/ffffff?text=SUMIT+MALLICK" alt="About Sumit">
                     <div class="about-stats">
                         <div class="stat-item">
                             <h3>3+</h3>
